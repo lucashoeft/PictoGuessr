@@ -12,6 +12,15 @@
 		A07498432128C84D006E8916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07498412128C84D006E8916 /* Main.storyboard */; };
 		A07498452128C84D006E8916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07498442128C84D006E8916 /* Assets.xcassets */; };
 		A07498482128C84D006E8916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07498462128C84D006E8916 /* LaunchScreen.storyboard */; };
+		A07498502128CC75006E8916 /* Transit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A074984F2128CC74006E8916 /* Transit-Bold.ttf */; };
+		A07498532128CCEE006E8916 /* Transit-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A07498522128CCEE006E8916 /* Transit-Normal.ttf */; };
+		A07498552128CD02006E8916 /* Transit-Normal-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A07498542128CD02006E8916 /* Transit-Normal-Italic.ttf */; };
+		A07498572128CD0F006E8916 /* Transit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A07498562128CD0F006E8916 /* Transit-Black.ttf */; };
+		A07498592128CD1B006E8916 /* Transit-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A07498582128CD1B006E8916 /* Transit-Bold-Italic.ttf */; };
+		A074985C2128DEC6006E8916 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074985B2128DEC6006E8916 /* StartViewController.swift */; };
+		A07498602128DF22006E8916 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074985F2128DF22006E8916 /* ChooseViewController.swift */; };
+		A07498622128DF2E006E8916 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07498612128DF2E006E8916 /* ResultViewController.swift */; };
+		A07498642128DF35006E8916 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07498632128DF35006E8916 /* EndViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		A07498442128C84D006E8916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A07498472128C84D006E8916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A07498492128C84D006E8916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A074984F2128CC74006E8916 /* Transit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Transit-Bold.ttf"; sourceTree = "<group>"; };
+		A07498522128CCEE006E8916 /* Transit-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Transit-Normal.ttf"; sourceTree = "<group>"; };
+		A07498542128CD02006E8916 /* Transit-Normal-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Transit-Normal-Italic.ttf"; sourceTree = "<group>"; };
+		A07498562128CD0F006E8916 /* Transit-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Transit-Black.ttf"; sourceTree = "<group>"; };
+		A07498582128CD1B006E8916 /* Transit-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Transit-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		A074985B2128DEC6006E8916 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		A074985F2128DF22006E8916 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		A07498612128DF2E006E8916 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A07498632128DF35006E8916 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,39 @@
 		A074983C2128C84D006E8916 /* PictoGuessr */ = {
 			isa = PBXGroup;
 			children = (
+				A074985A2128DE8C006E8916 /* ViewController */,
 				A074983D2128C84D006E8916 /* AppDelegate.swift */,
 				A074983F2128C84D006E8916 /* ViewController.swift */,
 				A07498412128C84D006E8916 /* Main.storyboard */,
-				A07498442128C84D006E8916 /* Assets.xcassets */,
 				A07498462128C84D006E8916 /* LaunchScreen.storyboard */,
 				A07498492128C84D006E8916 /* Info.plist */,
+				A07498442128C84D006E8916 /* Assets.xcassets */,
+				A07498512128CCAE006E8916 /* Fonts */,
 			);
 			path = PictoGuessr;
+			sourceTree = "<group>";
+		};
+		A07498512128CCAE006E8916 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A07498562128CD0F006E8916 /* Transit-Black.ttf */,
+				A07498542128CD02006E8916 /* Transit-Normal-Italic.ttf */,
+				A07498522128CCEE006E8916 /* Transit-Normal.ttf */,
+				A07498582128CD1B006E8916 /* Transit-Bold-Italic.ttf */,
+				A074984F2128CC74006E8916 /* Transit-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A074985A2128DE8C006E8916 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A074985B2128DEC6006E8916 /* StartViewController.swift */,
+				A074985F2128DF22006E8916 /* ChooseViewController.swift */,
+				A07498612128DF2E006E8916 /* ResultViewController.swift */,
+				A07498632128DF35006E8916 /* EndViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +166,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07498502128CC75006E8916 /* Transit-Bold.ttf in Resources */,
+				A07498552128CD02006E8916 /* Transit-Normal-Italic.ttf in Resources */,
 				A07498482128C84D006E8916 /* LaunchScreen.storyboard in Resources */,
+				A07498592128CD1B006E8916 /* Transit-Bold-Italic.ttf in Resources */,
+				A07498572128CD0F006E8916 /* Transit-Black.ttf in Resources */,
+				A07498532128CCEE006E8916 /* Transit-Normal.ttf in Resources */,
 				A07498452128C84D006E8916 /* Assets.xcassets in Resources */,
 				A07498432128C84D006E8916 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07498642128DF35006E8916 /* EndViewController.swift in Sources */,
+				A07498622128DF2E006E8916 /* ResultViewController.swift in Sources */,
 				A07498402128C84D006E8916 /* ViewController.swift in Sources */,
+				A07498602128DF22006E8916 /* ChooseViewController.swift in Sources */,
 				A074983E2128C84D006E8916 /* AppDelegate.swift in Sources */,
+				A074985C2128DEC6006E8916 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
