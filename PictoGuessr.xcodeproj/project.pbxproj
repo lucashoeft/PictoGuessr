@@ -22,6 +22,7 @@
 		A07498642128DF35006E8916 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07498632128DF35006E8916 /* EndViewController.swift */; };
 		A07498902128E5FC006E8916 /* IconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074988F2128E5FC006E8916 /* IconData.swift */; };
 		A07498922128EC4D006E8916 /* FalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07498912128EC4D006E8916 /* FalseViewController.swift */; };
+		A0BFF072212970D60069932F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BFF071212970D60069932F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		A07498632128DF35006E8916 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		A074988F2128E5FC006E8916 /* IconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconData.swift; sourceTree = "<group>"; };
 		A07498912128EC4D006E8916 /* FalseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseViewController.swift; sourceTree = "<group>"; };
+		A0BFF071212970D60069932F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				A074988E2128E5E7006E8916 /* IconData */,
 				A074985A2128DE8C006E8916 /* ViewController */,
 				A074983D2128C84D006E8916 /* AppDelegate.swift */,
+				A0BFF071212970D60069932F /* ViewController.swift */,
 				A07498412128C84D006E8916 /* Main.storyboard */,
 				A07498462128C84D006E8916 /* LaunchScreen.storyboard */,
 				A07498492128C84D006E8916 /* Info.plist */,
@@ -201,6 +204,7 @@
 				A07498902128E5FC006E8916 /* IconData.swift in Sources */,
 				A074983E2128C84D006E8916 /* AppDelegate.swift in Sources */,
 				A07498922128EC4D006E8916 /* FalseViewController.swift in Sources */,
+				A0BFF072212970D60069932F /* ViewController.swift in Sources */,
 				A074985C2128DEC6006E8916 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
