@@ -37,7 +37,7 @@ let autodiebstahlIcon = iconData(imageName: "Vorsicht_Autodiebstahl", imageAnswe
 
 let fotoautomatIcon = iconData(imageName: "Fotoautomat", imageAnswerOne: namePair(imageID: "Fotoautomat", imageDescription: "Fotoautomat"), imageAnswerTwo: namePair(imageID: "", imageDescription: "Erkennungsdienstliche Behandlung"), imageAnswerThree: namePair(imageID: "", imageDescription: "Solarium"))
 
-let einkaufennachtsIcon = iconData(imageName: "Einkaufen_nachts", imageAnswerOne: namePair(imageID: "", imageDescription: "Späti"), imageAnswerTwo: namePair(imageID: "", imageDescription: "Einkaufswagen"), imageAnswerThree: namePair(imageID: "Einkaufen_nachts", imageDescription: "Einkaufen nachts"))
+let einkaufennachtsIcon = iconData(imageName: "EinkaufenNachts", imageAnswerOne: namePair(imageID: "", imageDescription: "Späti"), imageAnswerTwo: namePair(imageID: "", imageDescription: "Einkaufswagen"), imageAnswerThree: namePair(imageID: "EinkaufenNachts", imageDescription: "Einkaufen nachts"))
 
 let bettelnverbotenIcon = iconData(imageName: "Betteln_Verboten", imageAnswerOne: namePair(imageID: "", imageDescription: "Keine Barzahlung"), imageAnswerTwo: namePair(imageID: "Betteln_Verboten", imageDescription: "Betteln verboten"), imageAnswerThree: namePair(imageID: "", imageDescription: "Kein Münzwurf"))
 

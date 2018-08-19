@@ -85,7 +85,7 @@ class ChooseViewController: ViewController {
     @IBAction func answerThreePressed(_ sender: UIButton) {
         
         // check if answer is correct
-        if globalIcon.imageName == handyIcon.imageAnswerThree.imageID {
+        if globalIcon.imageName == globalIcon.imageAnswerThree.imageID {
             catalogNeuTemporary.remove(at: globalIconIdentifier)
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
