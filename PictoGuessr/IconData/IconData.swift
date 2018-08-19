@@ -10,6 +10,7 @@ import Foundation
 
 // default
 var globalIcon: iconData = iconData(imageName: "", imageAnswerOne: namePair(imageID: "", imageDescription: ""), imageAnswerTwo: namePair(imageID: "", imageDescription: ""), imageAnswerThree: namePair(imageID: "", imageDescription: ""))
+
 var globalIconIdentifier = 0
 
 struct iconData {
@@ -24,7 +25,7 @@ struct namePair {
     let imageDescription: String
 }
 
-let catalogNeu = [handyIcon, abfallIcon, autodiebstahlIcon, fotoautomatIcon, einkaufennachtsIcon, bettelnverbotenIcon, badezimmerIcon, aussichtsterassenIcon, bankIcon]
+let catalogNeu = [handyIcon, abfallIcon, autodiebstahlIcon, fotoautomatIcon, einkaufennachtsIcon, bettelnverbotenIcon, badezimmerIcon, aussichtsterassenIcon, bankIcon, ersatzverkehrIcon]
 
 var catalogNeuTemporary = catalogNeu
 
@@ -32,7 +33,7 @@ let handyIcon = iconData(imageName: "Handy", imageAnswerOne: namePair(imageID: "
 
 let abfallIcon = iconData(imageName: "Abfall", imageAnswerOne: namePair(imageID: "", imageDescription: "Bananen"), imageAnswerTwo: namePair(imageID: "Abfall", imageDescription: "Abfall"), imageAnswerThree: namePair(imageID: "", imageDescription: "Achtung Rutschgefahr"))
 
-let autodiebstahlIcon = iconData(imageName: "Vorsicht_Autodiebstahl", imageAnswerOne: namePair(imageID: "Vorsicht_Autodiebstahl", imageDescription: "Vorsicht Autodiebstahl"), imageAnswerTwo: namePair(imageID: "", imageDescription: "Parkverbot"), imageAnswerThree: namePair(imageID: "", imageDescription: "Achtung Rutschgefahr"))
+let autodiebstahlIcon = iconData(imageName: "Vorsicht_Autodiebstahl", imageAnswerOne: namePair(imageID: "Vorsicht_Autodiebstahl", imageDescription: "Vorsicht Autodiebstahl"), imageAnswerTwo: namePair(imageID: "", imageDescription: "Parkverbot"), imageAnswerThree: namePair(imageID: "", imageDescription: "Carsharing"))
 
 let fotoautomatIcon = iconData(imageName: "Fotoautomat", imageAnswerOne: namePair(imageID: "Fotoautomat", imageDescription: "Fotoautomat"), imageAnswerTwo: namePair(imageID: "", imageDescription: "Erkennungsdienstliche Behandlung"), imageAnswerThree: namePair(imageID: "", imageDescription: "Solarium"))
 
@@ -42,6 +43,8 @@ let bettelnverbotenIcon = iconData(imageName: "Betteln_Verboten", imageAnswerOne
 
 let badezimmerIcon = iconData(imageName: "Badezimmer", imageAnswerOne: namePair(imageID: "Badezimmer", imageDescription: "Badezimmer"), imageAnswerTwo: namePair(imageID: "", imageDescription: "Badewanne"), imageAnswerThree: namePair(imageID: "", imageDescription: "Waschgelegenheit"))
 
-let aussichtsterassenIcon = iconData(imageName: "Aussichtsterassen", imageAnswerOne: namePair(imageID: "", imageDescription: "Planespotter"), imageAnswerTwo: namePair(imageID: "Aussichtsterasse", imageDescription: "Aussichtsterassen"), imageAnswerThree: namePair(imageID: "", imageDescription: "Abflüge"))
+let aussichtsterassenIcon = iconData(imageName: "Aussichtsterassen", imageAnswerOne: namePair(imageID: "", imageDescription: "Planespotter"), imageAnswerTwo: namePair(imageID: "Aussichtsterassen", imageDescription: "Aussichtsterassen"), imageAnswerThree: namePair(imageID: "", imageDescription: "Abflüge"))
 
 let bankIcon = iconData(imageName: "Bank", imageAnswerOne: namePair(imageID: "", imageDescription: "Kasse"), imageAnswerTwo: namePair(imageID: "", imageDescription: "nur Barzahlung"), imageAnswerThree: namePair(imageID: "Bank", imageDescription: "Bank"))
+
+let ersatzverkehrIcon = iconData(imageName: "Ersatzverkehr", imageAnswerOne: namePair(imageID: "", imageDescription: "Alternative Route"), imageAnswerTwo: namePair(imageID: "", imageDescription: "Umleitung"), imageAnswerThree: namePair(imageID: "Ersatzverkehr", imageDescription: "Ersatzverkehr"))

@@ -34,6 +34,11 @@ class FalseViewController: ViewController {
         }
     }
     
+    @IBAction func endPlaying(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "EndViewController") as! EndViewController
+        self.present(newViewController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

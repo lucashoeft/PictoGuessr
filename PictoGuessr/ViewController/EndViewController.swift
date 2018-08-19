@@ -22,6 +22,7 @@ class EndViewController: ViewController {
     }
     
     @IBAction func restartPlaying(_ sender: UIButton) {
+        catalogNeuTemporary = catalogNeu
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "StartViewController") as! StartViewController
         self.present(newViewController, animated: true, completion: nil)

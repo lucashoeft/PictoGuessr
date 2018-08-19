@@ -62,9 +62,7 @@ class ChooseViewController: ViewController {
             self.present(newViewController, animated: true, completion: nil)
             
         }
-        
-        print(catalogNeuTemporary.count)
-        
+
     }
     
     @IBAction func answerTwoPressed(_ sender: UIButton) {
