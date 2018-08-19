@@ -21,7 +21,12 @@ class EndViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func restartPlaying(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "StartViewController") as! StartViewController
+        self.present(newViewController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

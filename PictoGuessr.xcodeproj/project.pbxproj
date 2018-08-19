@@ -21,6 +21,8 @@
 		A07498602128DF22006E8916 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074985F2128DF22006E8916 /* ChooseViewController.swift */; };
 		A07498622128DF2E006E8916 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07498612128DF2E006E8916 /* ResultViewController.swift */; };
 		A07498642128DF35006E8916 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07498632128DF35006E8916 /* EndViewController.swift */; };
+		A07498902128E5FC006E8916 /* IconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074988F2128E5FC006E8916 /* IconData.swift */; };
+		A07498922128EC4D006E8916 /* FalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07498912128EC4D006E8916 /* FalseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		A074985F2128DF22006E8916 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
 		A07498612128DF2E006E8916 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		A07498632128DF35006E8916 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		A074988F2128E5FC006E8916 /* IconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconData.swift; sourceTree = "<group>"; };
+		A07498912128EC4D006E8916 /* FalseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		A074983C2128C84D006E8916 /* PictoGuessr */ = {
 			isa = PBXGroup;
 			children = (
+				A074988E2128E5E7006E8916 /* IconData */,
 				A074985A2128DE8C006E8916 /* ViewController */,
 				A074983D2128C84D006E8916 /* AppDelegate.swift */,
 				A074983F2128C84D006E8916 /* ViewController.swift */,
@@ -103,8 +108,17 @@
 				A074985F2128DF22006E8916 /* ChooseViewController.swift */,
 				A07498612128DF2E006E8916 /* ResultViewController.swift */,
 				A07498632128DF35006E8916 /* EndViewController.swift */,
+				A07498912128EC4D006E8916 /* FalseViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A074988E2128E5E7006E8916 /* IconData */ = {
+			isa = PBXGroup;
+			children = (
+				A074988F2128E5FC006E8916 /* IconData.swift */,
+			);
+			path = IconData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +202,9 @@
 				A07498622128DF2E006E8916 /* ResultViewController.swift in Sources */,
 				A07498402128C84D006E8916 /* ViewController.swift in Sources */,
 				A07498602128DF22006E8916 /* ChooseViewController.swift in Sources */,
+				A07498902128E5FC006E8916 /* IconData.swift in Sources */,
 				A074983E2128C84D006E8916 /* AppDelegate.swift in Sources */,
+				A07498922128EC4D006E8916 /* FalseViewController.swift in Sources */,
 				A074985C2128DEC6006E8916 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

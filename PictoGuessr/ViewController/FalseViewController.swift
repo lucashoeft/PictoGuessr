@@ -1,5 +1,5 @@
 //
-//  ResultViewController.swift
+//  FalseViewController.swift
 //  PictoGuessr
 //
 //  Created by Lucas Hoeft on 19.08.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResultViewController: ViewController {
+class FalseViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +21,7 @@ class ResultViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func continuePlaying(_ sender: UIButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ChooseViewController") as! ChooseViewController
-        self.present(newViewController, animated: true, completion: nil)
-    }
-    
-    @IBAction func EndPlaying(_ sender: UIButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "EndViewController") as! EndViewController
-        self.present(newViewController, animated: true, completion: nil)
-    }
+
     /*
     // MARK: - Navigation
 
