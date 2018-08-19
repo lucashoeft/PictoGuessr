@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A074983E2128C84D006E8916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074983D2128C84D006E8916 /* AppDelegate.swift */; };
-		A07498402128C84D006E8916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A074983F2128C84D006E8916 /* ViewController.swift */; };
 		A07498432128C84D006E8916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07498412128C84D006E8916 /* Main.storyboard */; };
 		A07498452128C84D006E8916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07498442128C84D006E8916 /* Assets.xcassets */; };
 		A07498482128C84D006E8916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07498462128C84D006E8916 /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		A074983A2128C84D006E8916 /* PictoGuessr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictoGuessr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A074983D2128C84D006E8916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A074983F2128C84D006E8916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A07498422128C84D006E8916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A07498442128C84D006E8916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A07498472128C84D006E8916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 				A074988E2128E5E7006E8916 /* IconData */,
 				A074985A2128DE8C006E8916 /* ViewController */,
 				A074983D2128C84D006E8916 /* AppDelegate.swift */,
-				A074983F2128C84D006E8916 /* ViewController.swift */,
 				A07498412128C84D006E8916 /* Main.storyboard */,
 				A07498462128C84D006E8916 /* LaunchScreen.storyboard */,
 				A07498492128C84D006E8916 /* Info.plist */,
@@ -200,7 +197,6 @@
 			files = (
 				A07498642128DF35006E8916 /* EndViewController.swift in Sources */,
 				A07498622128DF2E006E8916 /* ResultViewController.swift in Sources */,
-				A07498402128C84D006E8916 /* ViewController.swift in Sources */,
 				A07498602128DF22006E8916 /* ChooseViewController.swift in Sources */,
 				A07498902128E5FC006E8916 /* IconData.swift in Sources */,
 				A074983E2128C84D006E8916 /* AppDelegate.swift in Sources */,
