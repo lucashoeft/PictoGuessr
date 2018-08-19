@@ -15,22 +15,31 @@ class ChooseViewController: ViewController {
     @IBOutlet weak var answerTwo: UIButton!
     @IBOutlet weak var answerThree: UIButton!
     
-    // default
-    var globalIcon: iconData = iconData(imageName: "", imageAnswerOne: namePair(imageID: "", imageDescription: ""), imageAnswerTwo: namePair(imageID: "", imageDescription: ""), imageAnswerThree: namePair(imageID: "", imageDescription: ""))
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let randomIndex = Int(arc4random_uniform(UInt32(catalogNeu.count)))
-        let currentIcon = catalogNeu[randomIndex]
-    
-        self.globalIcon = currentIcon
+        var randomIndex = 0
+        var currentIcon: iconData
+        
+        if catalogNeuTemporary.count > 0 {
+            randomIndex = Int(arc4random_uniform(UInt32(catalogNeuTemporary.count)))
+            currentIcon = catalogNeuTemporary[randomIndex]
             
-        iconImageView.image = UIImage(named: currentIcon.imageName)
-        answerOne.setTitle(currentIcon.imageAnswerOne.imageDescription, for: .normal)
-        answerTwo.setTitle(currentIcon.imageAnswerTwo.imageDescription, for: .normal)
-        answerThree.setTitle(currentIcon.imageAnswerThree.imageDescription, for: .normal)
-
+            globalIcon = currentIcon
+            globalIconIdentifier = randomIndex
+            
+            iconImageView.image = UIImage(named: currentIcon.imageName)
+            answerOne.setTitle(currentIcon.imageAnswerOne.imageDescription, for: .normal)
+            answerTwo.setTitle(currentIcon.imageAnswerTwo.imageDescription, for: .normal)
+            answerThree.setTitle(currentIcon.imageAnswerThree.imageDescription, for: .normal)
+        } else {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "EndViewController") as! EndViewController
+            self.present(newViewController, animated: true, completion: nil)
+        }
+    
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,14 +51,19 @@ class ChooseViewController: ViewController {
         
         // check if answer is correct
         if globalIcon.imageName == globalIcon.imageAnswerOne.imageID {
+            catalogNeuTemporary.remove(at: globalIconIdentifier)
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
             self.present(newViewController, animated: true, completion: nil)
         } else {
+            catalogNeuTemporary.remove(at: globalIconIdentifier)
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "FalseViewController") as! FalseViewController
             self.present(newViewController, animated: true, completion: nil)
+            
         }
+        
+        print(catalogNeuTemporary.count)
         
     }
     
@@ -57,10 +71,12 @@ class ChooseViewController: ViewController {
         
         // check if answer is correct
         if globalIcon.imageName == globalIcon.imageAnswerTwo.imageID {
+            catalogNeuTemporary.remove(at: globalIconIdentifier)
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
             self.present(newViewController, animated: true, completion: nil)
         } else {
+            catalogNeuTemporary.remove(at: globalIconIdentifier)
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "FalseViewController") as! FalseViewController
             self.present(newViewController, animated: true, completion: nil)
@@ -72,10 +88,12 @@ class ChooseViewController: ViewController {
         
         // check if answer is correct
         if globalIcon.imageName == handyIcon.imageAnswerThree.imageID {
+            catalogNeuTemporary.remove(at: globalIconIdentifier)
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
             self.present(newViewController, animated: true, completion: nil)
         } else {
+            catalogNeuTemporary.remove(at: globalIconIdentifier)
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "FalseViewController") as! FalseViewController
             self.present(newViewController, animated: true, completion: nil)

@@ -21,7 +21,19 @@ class FalseViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func continuePlaying(_ sender: UIButton) {
+        print("ContinuePlaying:", catalogNeuTemporary.count)
+        if catalogNeuTemporary.count > 0 {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "ChooseViewController") as! ChooseViewController
+            self.present(newViewController, animated: true, completion: nil)
+        } else {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "EndViewController") as! EndViewController
+            self.present(newViewController, animated: true, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

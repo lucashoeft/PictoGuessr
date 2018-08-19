@@ -21,7 +21,12 @@ class StartViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func startPlaying(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ChooseViewController") as! ChooseViewController
+        self.present(newViewController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
